@@ -20,5 +20,4 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
         viewModel.disposables.clear()
     }
-
 }

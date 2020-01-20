@@ -12,9 +12,8 @@ class RepositoryImpl(val service: Service) : Repository {
                     response.isSuccessful -> {
                         response.body() ?: Any()
                     }
-                    else -> throw  Throwable(response.message())
+                    else -> throw Throwable(response.message())
                 }
-
             }
     }
 }

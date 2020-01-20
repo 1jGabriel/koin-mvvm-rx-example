@@ -13,7 +13,6 @@ val appModule = module {
 
     // Provide view model
     viewModel { provideMainViewModel(get()) }
-
 }
 
 fun provideMainViewModel(repository: Repository) =
