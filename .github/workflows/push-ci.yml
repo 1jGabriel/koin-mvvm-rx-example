@@ -27,7 +27,6 @@ jobs:
   apk:
     name: Generate APK
     runs-on: ubuntu-18.04
-
     steps:
       - uses: actions/checkout@v1
       - name: set up JDK 1.8
@@ -35,7 +34,7 @@ jobs:
         with:
           java-version: 1.8
       - name: Build debug APK
-        run: bash sudo ./gradlew assembleDebug --stacktrace
+        run: bash ./gradlew assembleDebug --stacktrace
       - name: Upload APK
         uses: actions/upload-artifact@v1
         with:
