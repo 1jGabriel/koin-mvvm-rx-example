@@ -29,8 +29,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: kill gradle proccess
-        run: bash gradle --stop
       - uses: actions/checkout@v1
       - name: set up JDK 1.8
         uses: actions/setup-java@v1
