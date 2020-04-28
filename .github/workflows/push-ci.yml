@@ -11,6 +11,16 @@ jobs:
         
       - name: "ktlint"
         uses: "vroy/gha-kotlin-linter@v1"
+   
+  detekt:
+    name: Run Detekt
+    runs-on: ubuntu-latest
+    steps:
+      - name: "checkout"
+        uses: actions/checkout@v2
+
+      - name: "detekt"
+        uses: natiginfo/action-detekt-all@1.8.0
 
   test:
     name: Run Unit Tests
